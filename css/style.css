@@ -1,0 +1,262 @@
+html{
+    font-family: 'Blinker', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nadpis{
+    background-color:  rgb(18, 44, 52);
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+.navigace{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.menu__item > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-grow: 3;
+    justify-content: center;
+}
+
+.menu > li{
+    flex-grow: 1;
+    background-color:  rgb(78, 165, 217);
+    align-items: center;
+    border: solid 2px black;
+    padding: 0.5em;
+}
+
+.welcome{
+    background-color: rgb(78, 165, 217);
+    margin: 0;
+}
+
+.nazev{
+    text-align: center;
+    background-color: rgb(18, 44, 52);
+    padding: 1em;
+    color: white;
+    margin: 0;
+    font-size: 2em;
+}
+
+.footer{
+background-color: rgb(83, 83, 83);
+color: white;
+padding: 0.5em;
+}
+
+.footer__heading {
+    margin: 0;
+}
+
+.responsive{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.popis{
+    background-color: rgb(34, 72, 112);
+    margin: 0;
+    color: white;
+    padding: 0.5em;
+
+}
+
+.popis-uhly{
+    order: -1;
+}
+
+.content__galerie{
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 4px;
+margin-top: 4px;
+justify-content: space-evenly;
+
+}
+
+.content > img{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+    justify-content: space-evenly;
+    
+    }
+
+.content__galerie__item {
+    display: block;
+    max-width: 49%;
+}
+
+.figure{
+    flex-basis: 40vw;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content__temata__tema{
+    margin: 0.2em;
+    position: relative;
+    
+    flex-wrap: wrap;
+    gap: 0.1em;
+}
+
+.content__temata__tema__img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.tema--caption{
+    background-color: rgb(34, 72, 112);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 2em;
+    font-size: small;
+  
+}
+
+
+.odstavec{
+    text-indent: 1em;
+}
+
+.autor{
+    background-color: rgb(18, 44, 52);
+    color: white;
+    display: flex;
+}
+
+.autorimg{
+    display: block;
+    width: 50%;
+    object-fit: cover;
+    align-self: flex-end;
+   align-self: center;
+   height: 100%;
+}
+.text{
+    padding: 0.7em;
+    margin: 0;
+}
+
+.info_autor{
+    display: flex;
+}
+
+.autor_text{
+    display: flex;
+}
+
+
+
+@media only screen and (min-width: 960px) {
+    .menu{
+        flex-direction: row;
+    }
+    .post{
+        flex-direction: row;
+    }
+   
+    .content__galerie{
+       width: 70%;
+       height: 100%;
+       justify-content: space-between;
+       margin: 0.2em;
+    }
+    .popis{
+        width: 30%;
+    }
+    .content > img {
+        max-width: 24%
+    }
+    .content{
+        display: flex;
+    }
+    .content__temata{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .post__img{
+        order: 1;
+    }
+    .autor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-left: solid 0.5em rgb(78, 165, 217);
+        height: 100%;
+    }
+    .temafotky{
+        width: 66%;
+    }
+    .propojeni{
+        display: flex;
+    }
+    .info_autor{
+        width: 34%;
+        display: flex;
+    }
+    .autorimg{
+        align-self: flex-end;
+        max-height: 50%;
+        display: block;
+        margin-bottom: 5em;
+        width: 100%;
+    }
+    .nazev {
+        border-top: solid 0.1em white;
+    }
+    .text__photo{
+        align-self: end;
+    }
+    .popis{
+        font-size: 1.5em;
+    }
+    .content__galerie__item {
+        display: block;
+        max-width: 24%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .nadpis-tema{
+        margin-top: 8em;
+    }
+}
